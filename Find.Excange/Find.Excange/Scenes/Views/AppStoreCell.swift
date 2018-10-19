@@ -86,7 +86,7 @@ extension AppStoreCell {
         label.font = UIFont.boldSystemFont(ofSize: 17)
         label.sizeToFit()
         label.minimumScaleFactor = 0.65
-        label.textColor = .black
+        label.textColor = .white
     }
     
     private func configureBasicView(){

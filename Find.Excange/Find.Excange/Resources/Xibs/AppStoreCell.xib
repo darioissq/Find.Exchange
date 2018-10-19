@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppStoreCell" id="gTV-IL-0wX" customClass="AppStoreCell" customModule="Find_Excange" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppStoreCell" id="gTV-IL-0wX" customClass="AppStoreCell" customModule="Find_Exchange" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="325" height="387"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -24,13 +24,41 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-ZS-Ki3">
                                 <rect key="frame" x="0.0" y="0.0" width="285" height="347"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tR9-zb-cl6">
+                                <rect key="frame" x="0.0" y="0.0" width="285" height="347"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6ci-rq-4OW">
+                                        <rect key="frame" x="8" y="8" width="149" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="1UX-PT-Ewc"/>
+                                            <constraint firstAttribute="width" constant="149" id="UOW-G6-sz3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICK OF THE WEEK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZo-cF-5NI">
+                                        <rect key="frame" x="8" y="131" width="114" height="136"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="136" id="cac-yc-azE"/>
+                                            <constraint firstAttribute="width" constant="114" id="hsk-Kn-l0s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.069918110177940085" blue="0.66666668653488159" alpha="0.19864106514084506" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6ci-rq-4OW" firstAttribute="top" secondItem="tR9-zb-cl6" secondAttribute="top" constant="8" id="SKi-cI-slq"/>
+                                    <constraint firstItem="6ci-rq-4OW" firstAttribute="leading" secondItem="tR9-zb-cl6" secondAttribute="leading" constant="8" id="fxh-un-lsA"/>
+                                    <constraint firstItem="nZo-cF-5NI" firstAttribute="leading" secondItem="tR9-zb-cl6" secondAttribute="leading" constant="8" id="zPC-CI-3Xg"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhZ-P3-kcY">
                                 <rect key="frame" x="0.0" y="267" width="285" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC7-Ix-YT0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your trusted provider for personal &amp; business" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC7-Ix-YT0">
                                         <rect key="frame" x="14" y="8" width="175" height="64"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cg-t4-bbM">
@@ -61,6 +89,11 @@
                             <constraint firstAttribute="trailing" secondItem="AhZ-P3-kcY" secondAttribute="trailing" id="8bZ-4c-WCq"/>
                             <constraint firstAttribute="bottom" secondItem="K0i-ZS-Ki3" secondAttribute="bottom" id="D53-q2-uve"/>
                             <constraint firstAttribute="trailing" secondItem="K0i-ZS-Ki3" secondAttribute="trailing" id="DEk-s0-7SI"/>
+                            <constraint firstItem="tR9-zb-cl6" firstAttribute="top" secondItem="K0i-ZS-Ki3" secondAttribute="top" id="FDb-56-2As"/>
+                            <constraint firstAttribute="bottom" secondItem="tR9-zb-cl6" secondAttribute="bottom" id="G8p-z1-8jV"/>
+                            <constraint firstItem="AhZ-P3-kcY" firstAttribute="top" secondItem="nZo-cF-5NI" secondAttribute="bottom" id="SBh-Y8-bZP"/>
+                            <constraint firstItem="tR9-zb-cl6" firstAttribute="leading" secondItem="K0i-ZS-Ki3" secondAttribute="leading" id="cVR-UF-LTD"/>
+                            <constraint firstItem="tR9-zb-cl6" firstAttribute="trailing" secondItem="K0i-ZS-Ki3" secondAttribute="trailing" id="p6z-i6-Ewq"/>
                             <constraint firstItem="K0i-ZS-Ki3" firstAttribute="leading" secondItem="sWd-8p-SmN" secondAttribute="leading" id="pOh-uq-rbQ"/>
                             <constraint firstAttribute="bottom" secondItem="AhZ-P3-kcY" secondAttribute="bottom" id="tKD-mE-E0X"/>
                             <constraint firstItem="AhZ-P3-kcY" firstAttribute="leading" secondItem="sWd-8p-SmN" secondAttribute="leading" id="tMF-JN-IbN"/>
@@ -87,6 +120,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Image" width="1125" height="1065"/>
+        <image name="Image" width="1125" height="1443"/>
+        <image name="logo" width="598" height="191"/>
     </resources>
 </document>
